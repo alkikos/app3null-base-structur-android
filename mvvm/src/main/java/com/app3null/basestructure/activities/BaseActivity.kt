@@ -8,7 +8,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 
-abstract class BaseActivity<VIEW_STATE, VIEW_MODEL : BaseViewModel<VIEW_STATE>> :
+abstract class BaseActivity<VIEW_STATE: Any, VIEW_MODEL : BaseViewModel<VIEW_STATE>> :
     AppCompatActivity() {
 
     private lateinit var viewModel: VIEW_MODEL

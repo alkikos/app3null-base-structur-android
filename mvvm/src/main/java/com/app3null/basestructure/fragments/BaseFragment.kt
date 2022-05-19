@@ -15,7 +15,7 @@ import com.app3null.basestructure.viewModels.BaseViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
-abstract class BaseFragment<VIEW_STATE, VIEW_MODEL : BaseViewModel<VIEW_STATE>> :
+abstract class BaseFragment<VIEW_STATE: Any, VIEW_MODEL : BaseViewModel<VIEW_STATE>> :
     Fragment() {
 
     private var compositeDisposable: CompositeDisposable? = null

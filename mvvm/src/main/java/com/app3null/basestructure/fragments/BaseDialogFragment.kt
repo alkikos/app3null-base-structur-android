@@ -17,7 +17,7 @@ import com.app3null.basestructure.viewModels.BaseViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
-abstract class BaseDialogFragment<VIEW_STATE, VIEW_MODEL : BaseViewModel<VIEW_STATE>>
+abstract class BaseDialogFragment<VIEW_STATE: Any, VIEW_MODEL : BaseViewModel<VIEW_STATE>>
     : DialogFragment() {
 
 

@@ -11,9 +11,7 @@ class FtestViewModel@Inject constructor(
     val handle: SavedStateHandle
 ) : BaseViewModel<FtestViewState>() {
 
-    override fun getInitialState(): FtestViewState {
-        return FtestViewState()
-    }
+
 
     fun testFunction(){
         Log.d("DBG", "OK")

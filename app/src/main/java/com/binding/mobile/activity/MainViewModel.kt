@@ -10,9 +10,9 @@ class MainViewModel@Inject constructor(
     val handle: SavedStateHandle
 ): BaseViewModel<MainViewState>() {
 
-    override fun getInitialState(): MainViewState {
+    /*override fun getInitialState(): MainViewState {
         return MainViewState
-    }
+    }*/
 
     fun getTestStr(): String {
         return "~~~TestViewModel"

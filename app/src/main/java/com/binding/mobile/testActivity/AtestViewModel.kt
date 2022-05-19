@@ -10,7 +10,5 @@ class AtestViewModel@Inject constructor(
     val handle: SavedStateHandle
 ) : BaseViewModel<AtestViewState>() {
 
-    override fun getInitialState(): AtestViewState {
-        return AtestViewState
-    }
+
 }
